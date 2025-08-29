@@ -1,0 +1,38 @@
+//Suyashi Tiwari
+//24070123115
+#include<iostream>
+using namespace std;
+class Student{
+    
+    int rollno;
+    char name[50];
+    double fee;
+    public:
+    Student()
+    {
+        cout<<"Enter the roll no:";
+        cin>>rollno;
+        cout<<"Enter the Name:";
+        cin>>name;
+        cout<<"Enter the Fee:";
+        cin>>fee;
+    }
+    void display(){
+        cout<<endl<<rollno<<endl<<name<<endl<<fee;
+    }
+};
+int main(){
+    Student s;
+    s.display();
+   return 0;
+}
+/*OUTPUT:
+Enter the roll no:115
+Enter the Name:suyashi
+Enter the Fee:20000
+
+115
+suyashi
+20000
+
+=== Code Execution Successful ===*/
