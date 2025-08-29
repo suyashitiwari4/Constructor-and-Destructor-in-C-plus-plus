@@ -1,0 +1,41 @@
+//Suyashi Tiwari
+//24070123115
+#include<iostream>
+using namespace std;
+class Car{
+    
+    char brand[50];
+    char model[50];
+    int year;
+    public:
+    Car();
+    void display();
+    
+    
+};
+Car::Car(){
+    cout<<"Enter the brand of the car:";
+    cin>>brand;
+    cout<<"Enter the model of the car:";
+    cin>>model;
+    cout<<"Enter the year of car:";
+    cin>>year;
+}
+void Car::display(){
+    cout<<endl<<"BRAND:"<<brand<<endl<<"Model:"<<model<<endl<<"YEAR:"<<year;
+}
+int main(){
+    Car c;
+    c.display();
+   return 0;
+}
+/*Output:
+Enter the brand of the car:Maruti
+Enter the model of the car:dzire
+Enter the year of car:2000
+
+BRAND:Maruti
+Model:dzire
+YEAR:2000
+
+=== Code Execution Successful ===*/
